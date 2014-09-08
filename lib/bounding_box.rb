@@ -34,10 +34,11 @@ attr_accessor :top, :bottom, :left, :right, :width, :height
   end
 
   def contains_point?(x, y)
-    #if x and y are in the box, evaluate to true
+    #if x and y are in the box, evaluate to true.
+    #check to see if it's between height and width
 
     if x <= @height && y >= @width
-      return true
+       true
     else
       false
     end
